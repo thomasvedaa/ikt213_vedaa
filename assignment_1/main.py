@@ -15,6 +15,10 @@ def print_image_information(img):
     if channels == 2:
         print("Channels: 1, grayscale image",)
 
+    size=img.shape
+    print("size: ",size)
+    print("datatype: ",img.dtype)
+
 
     cv2.imshow('image',img)
     cv2.waitKey(0)
